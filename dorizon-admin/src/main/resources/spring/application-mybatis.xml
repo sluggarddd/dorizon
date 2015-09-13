@@ -20,13 +20,13 @@
         <property name="url" value="${db.url}"/>
         <property name="username" value="${db.username}"/>
         <property name="password" value="${db.password}"/>
-        <property name="driver" value="${db.driver}"/>
+        <property name="driverClassName" value="${db.driver}"/>
 
-        <property name="initialSize" value="${db.initialSize}"/>
-        <property name="maxActive" value="${db.maxActive}"/>
-        <property name="minIdle" value="${db.minIdle}"/>
-        <property name="timeBetweenEvictionRunsMillis" value="${db.timeBetweenEvictionRunsMillis}"/>
-        <property name="minEvictableIdleTimeMillis" value="${db.minEvictableIdleTimeMillis}"/>
+        <!--<property name="initialSize" value="${db.initialSize}"/>-->
+        <!--<property name="maxActive" value="${db.maxActive}"/>-->
+        <!--<property name="minIdle" value="${db.minIdle}"/>-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="${db.timeBetweenEvictionRunsMillis}"/>-->
+        <!--<property name="minEvictableIdleTimeMillis" value="${db.minEvictableIdleTimeMillis}"/>-->
 
     </bean>
 

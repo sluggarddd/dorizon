@@ -4,11 +4,11 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
-    <display-name>Dorizon</display-name>
+    <display-name>Dorizon Admin</display-name>
 
     <context-param>
         <param-name>webAppRootKey</param-name>
-        <param-value>Dorizon</param-value>
+        <param-value>Dorizon-Admin</param-value>
     </context-param>
 
 
@@ -59,7 +59,7 @@
 
     <!-- Spring MVC servlet -->
     <servlet>
-        <servlet-name>dorizon-web</servlet-name>
+        <servlet-name>dorizon-admin</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -68,7 +68,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>dorizon-web</servlet-name>
+        <servlet-name>dorizon-admin</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
