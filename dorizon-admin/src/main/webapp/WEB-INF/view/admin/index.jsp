@@ -1,10 +1,9 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isErrorPage="false" %>
 <!DOCTYPE html>
 <html lang="en">
 
 <%-- head --%>
-<jsp:include page="../common/head.jsp"/>
+<%@ include file="../common/head.jsp" %>
 
 <body>
 
