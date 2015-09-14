@@ -4,6 +4,7 @@ import com.zhw.dorizon.admin.dao.AdminDAO;
 import com.zhw.dorizon.admin.pojo.AdminBean;
 import com.zhw.dorizon.admin.pojo.view.ViewAdminBean;
 import com.zhw.dorizon.admin.service.AdminService;
+import com.zhw.dorizon.common.config.PageConfig;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -50,7 +51,7 @@ public class AdminServiceImpl implements AdminService {
             params.put("limit", limit);
         } else {
             params.put("offset", 0);
-            params.put("limit", 10);
+            params.put("limit", PageConfig.LIMIT);
         }
 
         return adminDAO.listView(params);

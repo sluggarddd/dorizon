@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.zhw.dorizon.admin.dao.BlogDAO">
+
+
+    <resultMap id="blog" type="com.zhw.dorizon.admin.pojo.BlogBean">
+        <result column="id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="create_user" property="createUser"/>
+        <result column="create_time" property="createTime"/>
+        <result column="modify_user" property="modifyUser"/>
+        <result column="modify_time" property="modifyTime"/>
+    </resultMap>
+
+    <select id="list" resultMap="blog">
+        SELECT
+        id,title,content,craete_user,create_time,modify_user,modify_time
+        FROM
+        dorizon_blog
+    </select>
+
+
+    <insert id="add" parameterType="com.zhw.dorizon.admin.pojo.BlogBean"
+            useGeneratedKeys="true" keyProperty="id">
+
+        INSERT
+        INTO
+        dorizon_blog
+        (title,content,create_user,create_time)
+        VALUES
+        (#{title},#{content},#{createUser},#{createTime})
+
+    </insert>
+
+</mapper>

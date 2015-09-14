@@ -1,5 +1,5 @@
 <head>
-    <%@ include file="../common/taglibs.jsp"%>
+    <%@ include file="taglibs.jsp"%>
     <meta charset="utf-8">
     <base href="<%=basePath%>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

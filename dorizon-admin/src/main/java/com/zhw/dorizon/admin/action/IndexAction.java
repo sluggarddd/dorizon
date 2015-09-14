@@ -41,7 +41,7 @@ public class IndexAction extends BaseAction {
     public ModelAndView index() throws Exception {
 
         ModelAndView mav = mav();
-        mav.setViewName("admin/index");
+        mav.setViewName("index");
 
         return mav;
 

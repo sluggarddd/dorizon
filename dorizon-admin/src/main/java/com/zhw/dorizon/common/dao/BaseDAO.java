@@ -12,7 +12,7 @@ public interface BaseDAO<T> {
 
     public Integer save(T t) throws Exception;
 
-    public Integer update(T t) throws Exception;
+    public Integer updateBean(T t) throws Exception;
 
     public Integer update(Map<String, Object> params) throws Exception;
 

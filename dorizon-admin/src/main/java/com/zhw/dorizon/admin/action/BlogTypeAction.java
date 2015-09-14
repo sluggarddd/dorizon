@@ -1,7 +1,7 @@
 package com.zhw.dorizon.admin.action;
 
-import com.zhw.dorizon.admin.pojo.view.ViewAdminBean;
-import com.zhw.dorizon.admin.service.AdminService;
+import com.zhw.dorizon.admin.pojo.BlogTypeBean;
+import com.zhw.dorizon.admin.service.BlogTypeService;
 import com.zhw.dorizon.common.action.BaseAction;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,40 +10,36 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
- * Created by zhanghw on 2015/9/13.
+ * Created by zhw on 15/9/14.
  */
 @Controller
-@RequestMapping("/admin")
-public class AdminAction extends BaseAction {
+@RequestMapping("/type/blog")
+public class BlogTypeAction extends BaseAction {
 
 
     @Resource
-    AdminService adminService;
+    BlogTypeService blogTypeService;
 
-
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public ModelAndView list(@RequestParam(value = "page", required = false) Integer page,
                              @RequestParam(value = "limit", required = false) Integer limit) throws Exception {
 
+
         Map<String, Object> params = new HashMap<String, Object>();
 
-        List<ViewAdminBean> dataList = adminService.list(params, page, limit);
+        List<BlogTypeBean> dataList = blogTypeService.list(params, page, limit);
 
-        if (dataList == null) {
-            dataList = new ArrayList<ViewAdminBean>();
-        }
         ModelAndView mav = mav();
-
         mav.addObject("items", dataList);
-        mav.setViewName("admin/index");
+        mav.setViewName("blog-type/index");
 
         return mav;
 
 
     }
-
-
 }
