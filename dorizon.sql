@@ -1,24 +1,42 @@
 /*
- Navicat Premium Data Transfer
+Navicat MySQL Data Transfer
 
- Source Server         : zhw_mac
- Source Server Type    : MySQL
- Source Server Version : 50624
- Source Host           : localhost
- Source Database       : dorizon
+Source Server         : finelx
+Source Server Version : 50528
+Source Host           : localhost:3306
+Source Database       : dorizon
 
- Target Server Type    : MySQL
- Target Server Version : 50624
- File Encoding         : utf-8
+Target Server Type    : MYSQL
+Target Server Version : 50528
+File Encoding         : 65001
 
- Date: 09/14/2015 21:08:06 PM
+Date: 2015-09-14 23:58:07
 */
 
-SET NAMES utf8;
-SET FOREIGN_KEY_CHECKS = 0;
+SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
---  Table structure for `dorizon_admin_user`
+-- Table structure for dorizon_ad
+-- ----------------------------
+DROP TABLE IF EXISTS `dorizon_ad`;
+CREATE TABLE `dorizon_ad` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `create_user` varchar(40) NOT NULL,
+  `create_time` bigint(13) NOT NULL,
+  `modify_user` varchar(40) DEFAULT NULL,
+  `modify_time` bigint(13) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `adTypeId` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of dorizon_ad
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for dorizon_admin_user
 -- ----------------------------
 DROP TABLE IF EXISTS `dorizon_admin_user`;
 CREATE TABLE `dorizon_admin_user` (
@@ -34,14 +52,29 @@ CREATE TABLE `dorizon_admin_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Records of `dorizon_admin_user`
+-- Records of dorizon_admin_user
 -- ----------------------------
-BEGIN;
 INSERT INTO `dorizon_admin_user` VALUES ('zhanghaowei', '123123', '1231321', '12313@qq.com', null, '张浩威', null, '123123');
-COMMIT;
 
 -- ----------------------------
---  Table structure for `dorizon_blog`
+-- Table structure for dorizon_ad_type
+-- ----------------------------
+DROP TABLE IF EXISTS `dorizon_ad_type`;
+CREATE TABLE `dorizon_ad_type` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) NOT NULL,
+  `create_user` varchar(40) NOT NULL,
+  `create_time` bigint(13) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of dorizon_ad_type
+-- ----------------------------
+INSERT INTO `dorizon_ad_type` VALUES ('1', '首页下方', 'zhanghaowei', '123123');
+
+-- ----------------------------
+-- Table structure for dorizon_blog
 -- ----------------------------
 DROP TABLE IF EXISTS `dorizon_blog`;
 CREATE TABLE `dorizon_blog` (
@@ -58,7 +91,11 @@ CREATE TABLE `dorizon_blog` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Table structure for `dorizon_blog_type`
+-- Records of dorizon_blog
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for dorizon_blog_type
 -- ----------------------------
 DROP TABLE IF EXISTS `dorizon_blog_type`;
 CREATE TABLE `dorizon_blog_type` (
@@ -71,14 +108,12 @@ CREATE TABLE `dorizon_blog_type` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
---  Records of `dorizon_blog_type`
+-- Records of dorizon_blog_type
 -- ----------------------------
-BEGIN;
 INSERT INTO `dorizon_blog_type` VALUES ('1', 'Web开发', 'Web开发专题', 'zhanghaowei', '123123123');
-COMMIT;
 
 -- ----------------------------
---  Table structure for `dorizon_r_blog_type`
+-- Table structure for dorizon_r_blog_type
 -- ----------------------------
 DROP TABLE IF EXISTS `dorizon_r_blog_type`;
 CREATE TABLE `dorizon_r_blog_type` (
@@ -87,4 +122,6 @@ CREATE TABLE `dorizon_r_blog_type` (
   PRIMARY KEY (`blog_id`,`blog_type_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-SET FOREIGN_KEY_CHECKS = 1;
+-- ----------------------------
+-- Records of dorizon_r_blog_type
+-- ----------------------------
