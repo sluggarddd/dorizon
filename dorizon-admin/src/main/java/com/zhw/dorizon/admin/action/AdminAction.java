@@ -38,7 +38,7 @@ public class AdminAction extends BaseAction {
         ModelAndView mav = mav();
 
         mav.addObject("items", dataList);
-        mav.setViewName("admin/index");
+        mav.setViewName("/admin/index");
 
         return mav;
 
