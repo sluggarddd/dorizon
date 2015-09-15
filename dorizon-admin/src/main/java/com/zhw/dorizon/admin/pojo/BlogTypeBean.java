@@ -16,6 +16,8 @@ public class BlogTypeBean {
 
     private Long createTime;
 
+    private Integer ordering;
+
     public Integer getId() {
         return id;
     }
@@ -54,5 +56,13 @@ public class BlogTypeBean {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getOrdering() {
+        return ordering;
+    }
+
+    public void setOrdering(Integer ordering) {
+        this.ordering = ordering;
     }
 }

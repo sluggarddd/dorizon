@@ -1,0 +1,18 @@
+.main-content {
+    padding-top: 51px;
+}
+
+body {
+    width: 1280px;
+}
+
+.home-left {
+    width: 70%;
+    padding: 10px 0px 0px 40px;
+}
+
+.home-right {
+    width: 30%;
+    padding: 10px 40px 0px 0px;
+}
+
