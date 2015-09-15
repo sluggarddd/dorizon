@@ -2,3 +2,6 @@
 target
 .DS_Store
 src/.DS_Store
+Dorizon.iml
+dorizon-admin/dorizon-admin.iml
+dorizon-front/dorizon-front.iml

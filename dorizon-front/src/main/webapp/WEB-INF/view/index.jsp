@@ -65,7 +65,18 @@
     </div>
 
 
-    <div class=""
+    <div class="col-md-3 home-right">
+
+        <div class="home-cate">
+
+            <div class="title">
+                分类
+            </div>
+
+
+        </div>
+
+    </div>
 </div>
 
 
