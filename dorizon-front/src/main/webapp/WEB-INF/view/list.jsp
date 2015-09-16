@@ -189,7 +189,7 @@
 
         <div class="col-md-3 m-list-right">
 
-            <div class="rank-1">
+            <div class="rank">
 
             </div>
 
@@ -197,7 +197,7 @@
 
             </div>
 
-            <div class="rank-2">
+            <div class="rank">
 
             </div>
 
@@ -205,7 +205,7 @@
 
             </div>
 
-            <div class="rank-3">
+            <div class="rank">
 
             </div>
 

@@ -22,6 +22,60 @@
 
 
 
+  <div class="col-md-9 m-detail-left ">
+
+    <div class="bread-crumbs">
+
+    </div>
+
+    <div class="title-bar">
+      <div class="title">
+
+      </div>
+
+      <div class="meta">
+
+      </div>
+    </div>
+
+    <div class="content">
+
+    </div>
+
+    <div class="page-bar">
+      <ul>
+        <li>呵呵</li>
+        <li>呵呵</li>
+      </ul>
+    </div>
+
+<div class="ad-1">
+
+</div>
+  </div>
+
+
+  <div class="col-md-3 m-detail-right">
+    <div class="rank">
+
+    </div>
+
+    <div class="ad-1">
+
+
+    </div>
+
+    <div class="rank">
+
+    </div>
+
+    <div class="ad-2">
+
+    </div>
+  </div>
+
+
+
 </div>
 
 

@@ -32,4 +32,16 @@ public class HomeAction extends BaseAction {
         return mav;
 
     }
+
+
+
+
+    @RequestMapping(value = "/detail",method = RequestMethod.GET)
+    public ModelAndView get()throws Exception{
+
+        ModelAndView mav = mav();
+
+        mav.setViewName("/detail");
+        return mav;
+    }
 }
