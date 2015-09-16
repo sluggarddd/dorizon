@@ -22,6 +22,201 @@
 <div class="main-content">
 
 
+    <div class="m-list">
+
+
+        <div class="col-md-9 m-list-left">
+
+            <div class="title">
+
+            </div>
+
+            <div class="list">
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="title">
+
+                    </div>
+
+                    <div class="meta">
+
+                    </div>
+
+                    <div class="overview">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3 m-list-right">
+
+            <div class="rank-1">
+
+            </div>
+
+            <div class="ad-1">
+
+            </div>
+
+            <div class="rank-2">
+
+            </div>
+
+            <div class="ad-2">
+
+            </div>
+
+            <div class="rank-3">
+
+            </div>
+
+            <div class="ad-3">
+
+            </div>
+
+        </div>
+    </div>
+
+
 </div>
 
 

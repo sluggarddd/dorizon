@@ -22,4 +22,14 @@ public class HomeAction extends BaseAction {
         return mav;
 
     }
+
+
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public ModelAndView list() throws Exception {
+
+        ModelAndView mav = mav();
+        mav.setViewName("/list");
+        return mav;
+
+    }
 }

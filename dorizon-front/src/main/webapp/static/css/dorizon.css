@@ -20,23 +20,196 @@ body {
     width: 100%;
 }
 
-.home-left .home-cate {
-    height: 400px;
+.home-cate-group {
+    height: 920px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.home-left .home-cate-group .home-cate {
+
+    height: 450px;
+    background-color: #1b6d85;
+
+}
+
+.home-left .home-cate-group .home-cate .title {
+    font-size: 20px;
+    text-align: left;
+    line-height: 50px;
+    height: 50px;
+}
+
+.home-left .home-cate-group .home-cate .list-group-item {
+    margin-bottom: 0;
+}
+
+.home-left .home-cate-group .home-cate .list-group a {
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .home-right .home-cate {
     height: 300px;
+    width: 100%;
     background-color: #FFFFFF;
 }
 
 .home-right .home-cate .title {
 
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    line-height: 50px;
+    height: 50px;
 
 }
 
+.home-right .home-cate .list-group-item {
+    margin-bottom: 0;
+}
+
+.home-right .home-cate a {
+    float: left;
+    width: 50%;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .home-right .home-list {
+    height: 450px;
+}
+
+.home-right .home-right-ad-1 {
+    width: 100%;
+    height: 80px;
+    background-color: #ff0000;
+}
+
+.home-right .home-right-rank-1 {
+
+    height: 470px;
+
+}
+
+.home-right .home-right-rank-1 a {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.home-right .home-right-ad-2 {
+
+    height: 300px;
+    background-color: #b9def0;
+}
+
+.home-left-bottom-ad {
+    width: 100%;
+    height: 100px;
+    background-color: #ffc0cb;
+}
+
+.main-footer {
+    height: 200px;
+    margin-top: 20px;
+    background-color: #888;
+}
+
+.m-list {
+    margin: 20px;
+    background-color: #FFFFFF;
+}
+
+.m-list .m-list-left {
+
+}
+
+.m-list .m-list-right {
+
+}
+
+.m-list .m-list-left .title {
+    height: 60px;
+    font-size: 27px;
+    line-height: 60px;
+}
+
+.m-list .m-list-left .list {
+
+}
+
+.m-list .m-list-left .list-item {
+
+    height: 180px;
+
+}
+
+.m-list .m-list-left .list-item .title {
+
+    height: 40px;
+    background-color: #000;
+
+}
+
+.m-list .m-list-left .list-item .meta {
+    height: 25px;
+    background-color: #0000dd;
+}
+
+.m-list .m-list-left .list-item .overview {
+    height: 115px;
+    background-color: #1b6d85;
+}
+
+.m-list .m-list-right .rank-1 {
+    height: 450px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.m-list .m-list-right a {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.m-list .m-list-right .rank-2 {
+    height: 450px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.m-list .m-list-right .rank-3 {
 
     height: 450px;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+
+.m-list .m-list-right .ad-1 {
+    width: 100%;
+    height: 80px;
+    background-color: #ff0000;
+}
+
+.m-list .m-list-right .ad-2 {
+    width: 100%;
+    height: 80px;
+    background-color: #ff0000;
+}
+
+.m-list .m-list-right .ad-3 {
+    width: 100%;
+    height: 300px;
+    background-color: #ffc0cb;
 }
