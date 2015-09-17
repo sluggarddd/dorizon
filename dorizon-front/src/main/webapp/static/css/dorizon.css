@@ -182,7 +182,6 @@ body {
     text-overflow: ellipsis;
 }
 
-
 .m-list .m-list-right .ad-1 {
     width: 100%;
     height: 80px;
@@ -201,21 +200,19 @@ body {
     background-color: #ffc0cb;
 }
 
-
-.m-detail{
-
-}
-
-.m-detail .m-detail-left{
+.m-detail {
 
 }
 
-.m-detail .m-detail-right{
+.m-detail .m-detail-left {
 
 }
 
+.m-detail .m-detail-right {
 
-.m-detail-left .bread-crumbs{
+}
+
+.m-detail-left .bread-crumbs {
 
     height: 50px;
     font-size: 23px;
@@ -223,64 +220,59 @@ body {
     background-color: #ffffff;
 }
 
-
-.m-detail-left .title-bar{
-    height:90px;
+.m-detail-left .title-bar {
+    height: 90px;
     background-color: #ddd;
 }
 
-.title-bar .title{
+.title-bar .title {
     height: 50px;
     font-size: 30px;
     line-height: 50px;
 }
 
-.title-bar .meta{
+.title-bar .meta {
     height: 40px;
     font-size: 18px;
     color: #777;
     line-height: 40px;
 }
 
-
-.m-detail-left .content{
+.m-detail-left .content {
     width: 100%;
     height: 1000px;
     background-color: #398439;
 }
 
-.m-detail-left .page-bar{
+.m-detail-left .page-bar {
     height: 60px;
     background-color: #0000dd;
 }
 
-.m-detail-left .page-bar li{
-    height:30px;
+.m-detail-left .page-bar li {
+    height: 30px;
     width: 50%;
     float: left;
 }
 
-.m-detail-left .ad-1{
+.m-detail-left .ad-1 {
     height: 110px;
     width: 100%;
 }
 
-
-.m-detail-right .rank{
+.m-detail-right .rank {
     height: 450px;
     width: 100%;
     background-color: #ffffff;
 }
 
-
-
- .m-detail-right .ad-1 {
+.m-detail-right .ad-1 {
     width: 100%;
     height: 80px;
     background-color: #ff0000;
 }
 
- .m-detail-right .ad-2 {
+.m-detail-right .ad-2 {
     width: 100%;
     height: 300px;
     background-color: #ffc0cb;

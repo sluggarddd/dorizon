@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.zhw.dorizon.front.dao.BlogTypeDAO">
+
+    <resultMap id="viewType" type="com.zhw.dorizon.front.pojo.view.ViewTypeBean">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="alias" property="alias"/>
+    </resultMap>
+
+
+    <select id="listView" resultMap="viewType" parameterType="java.util.Map">
+        SELECT
+
+
+        dbt.id id,dbt.name name , dbt.alias alias
+
+        FROM
+        dorizon_r_blog_type brby
+
+        LEFT JOIN dorizon_blog_type dbt ON brby.blog_type_id = dbt.id
+
+        WHERE
+
+        brby.blog_id = #{blogId}
+
+
+    </select>
+
+
+</mapper>

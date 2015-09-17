@@ -5,4 +5,42 @@
 <mapper namespace="com.zhw.dorizon.front.dao.BlogDAO">
 
 
+    <resultMap id="viewBlog" type="com.zhw.dorizon.front.pojo.view.ViewBlogBean">
+        <result column="db_id" property="id"/>
+        <result column="db_title" property="title"/>
+        <result column="db_content" property="content"/>
+        <result column="db_author" property="author"/>
+        <result column="db_author_account" property="authorAccount"/>
+        <result column="db_create_time" property="publishedTime"/>
+        <result column="db_read_count" property="readCount"/>
+    </resultMap>
+
+
+    <select id="getView" resultMap="viewBlog" parameterType="java.util.Map">
+
+        SELECT
+        db.id db_id,
+        db.title db_title,
+        db.content db_content,
+        db.create_time db_create_time,
+        db.read_count db_read_count,
+        db.create_user db_author_account,
+        dbu.nickname db_author
+
+        FROM
+        dorizon_blog db
+
+        LEFT JOIN
+        dorizon_admin_user adu ON  dou.username = db.create_user
+
+        WHERE
+        db.is_del = 0;
+
+        AND
+
+        db_id = #{blogId}
+
+    </select>
+
+
 </mapper>
